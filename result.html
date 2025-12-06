@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Prediction Result</h2>
+
+    <p><strong>Entered Message:</strong> {{ message }}</p>
+
+    <h3>The message is:  
+        {% if prediction == 'spam' %}
+        <span class="spam">SPAM ❌</span>
+        {% else %}
+        <span class="ham">NOT SPAM ✔️</span>
+        {% endif %}
+    </h3>
+
+    <br>
+    <a href="/" class="btn">Check Another Message</a>
+</div>
+
+</body>
+</html>

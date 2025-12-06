@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detection System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📩 Spam Classifier</h1>
+
+    <form action="/predict" method="POST">
+        <textarea name="message" placeholder="Enter a message..." required></textarea>
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>
